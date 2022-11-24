@@ -1,0 +1,27 @@
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color $transform;
+
+  &:hover,
+  &:focus {
+    background-color: $mainActiveColor;
+  }
+  &:hover .social-link__icon--grey,
+  &:focus .social-link__icon--grey {
+    fill: $secondaryWhiteColor;
+  }
+
+  &__icon--white {
+    fill: $secondaryWhiteColor;
+  }
+
+  &__icon--grey {
+    fill: #afb1b8;
+    transition: fill $transform;
+  }
+}

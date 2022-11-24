@@ -1,0 +1,29 @@
+.logo {
+  font-family: $secondaryFont;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color $transform;
+
+  &:hover,
+  &:focus {
+    color: $mainActiveColor;
+  }
+
+  &--dark {
+    color: inherit;
+    margin-right: 93px;
+  }
+
+  &--light {
+    color: $secondaryWhiteColor;
+    margin-bottom: 2px;
+    display: inline-block;
+  }
+
+  &__title {
+    color: $mainActiveColor;
+  }
+}

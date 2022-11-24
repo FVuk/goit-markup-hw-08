@@ -1,0 +1,31 @@
+.clients {
+  padding-top: 94px;
+
+  &__list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 94px;
+    gap: 30px;
+  }
+
+  &__list .clients__icon {
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: fill $transform, border-color $transform, transform $transform;
+
+    &:hover,
+    &:focus {
+      border-color: $mainActiveColor;
+    }
+  }
+
+  &__link:hover .clients__icon,
+  &__link:focus .clients__icon {
+    fill: $mainActiveColor;
+    transform: scale(1.2);
+  }
+}

@@ -1,0 +1,16 @@
+.modal-backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+  transition: transform $transform, opacity $transform,
+    visibility $transform;
+}

@@ -1,0 +1,74 @@
+.projects {
+  &__portfolio {
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+    background: $secondaryWhiteColor;
+    border-radius: 1px solid #eeeeee;
+    transition: box-shadow $transform;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+    }
+
+    &:hover .projects__overlay {
+      transform: translateX(0);
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    line-height: 1.87;
+    padding-left: 24px;
+    margin: 20px 0 4px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: $mainLinkColor;
+    padding: 0 24px 20px;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03;
+    color: $secondaryWhiteColor;
+  }
+
+  &__overlay {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    padding: 0 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform $transform;
+    transform: translateY(100%);
+  }
+}
