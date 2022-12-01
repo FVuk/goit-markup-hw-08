@@ -21,6 +21,94 @@
   <body>
     <!-- HEADER START -->
     <header class="header">
+      <!-- MOBILE-MENU START -->
+      <div class="mobile-menu_overlay" data-menu>
+        <div class="mobile-menu">
+          <button
+            class="mobile-menu_button-close"
+            type="button"
+            data-menu-close
+          >
+            <svg class="mobile-menu_icon-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu_close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu_list-nav">
+            <li class="mobile-menu_item-nav">
+              <a
+                class="mobile-menu_link-nav mobile-menu_link-na--active"
+                href="./index.html"
+                >studio</a
+              >
+            </li>
+            <li class="mobile-menu_item-nav">
+              <a class="mobile-menu_link-nav" href="./portfolio.html"
+                >portfolio</a
+              >
+            </li>
+            <li class="mobile-menu_item-nav">
+              <a class="mobile-menu_link-nav" href="#">contact</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu_list-contact">
+            <li class="mobile-menu_list-contact-tel">
+              <a class="mobile-menu_link-contact-tel" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu_list-contact-mailto">
+              <a
+                class="mobile-menu_link-contact-mailto"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu_list-social">
+            <li class="mobile-menu_item-social">
+              <a
+                class="mobile-menu_link-social"
+                href="https://instagram.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >instagram</a
+              >
+            </li>
+            <li class="mobile-menu_item-social">
+              <a
+                class="mobile-menu_link-social"
+                href="https://twitter.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >twitter</a
+              >
+            </li>
+            <li class="mobile-menu_item-social">
+              <a
+                class="mobile-menu_link-social"
+                href="https://facebook.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >facebook</a
+              >
+            </li>
+            <li class="mobile-menu_item-social">
+              <a
+                class="mobile-menu_link-social"
+                href="https://linkedin.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >linkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MOBILE-MENU END -->
       <div class="container">
         <div class="header__body">
           <div class="header__index">
@@ -42,6 +130,13 @@
               </li>
             </ul>
           </div>
+
+          <button class="mobile-menu-button" type="button" data-menu-open>
+            <svg class="mobile-menu-button_icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+              >
+            </svg>
+          </button>
 
           <ul class="header__list">
             <li class="header__item">
@@ -98,7 +193,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_1.jpg"
+                  src="./images/projects/project_1.jpg"
+                  srcset="./images/projects/project_1@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -119,7 +215,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_2.jpg"
+                  src="./images/projects/project_2.jpg"
+                  srcset="./images/projects/project_2@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -140,7 +237,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_3.jpg"
+                  src="./images/projects/project_3.jpg"
+                  srcset="./images/projects/project_3@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -161,7 +259,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_4.jpg"
+                  src="./images/projects/project_4.jpg"
+                  srcset="./images/projects/project_4@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -182,7 +281,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_5.jpg"
+                  src="./images/projects/project_5.jpg"
+                  srcset="./images/projects/project_5@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -203,7 +303,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_6.jpg"
+                  src="./images/projects/project_6.jpg"
+                  srcset="./images/projects/project_6@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -224,7 +325,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_7.jpg"
+                  src="./images/projects/project_7.jpg"
+                  srcset="./images/projects/project_7@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -245,7 +347,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_8.jpg"
+                  src="./images/projects/project_8.jpg"
+                  srcset="./images/projects/project_8@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"
@@ -266,7 +369,8 @@
               <div class="projects__box">
                 <img
                   class="projects__image"
-                  src="images/project_9.jpg"
+                  src="./images/projects/project_9.jpg"
+                  srcset="./images/projects/project_9@2x.jpg 2x"
                   alt="Website design offer"
                   width="370"
                   height="294"

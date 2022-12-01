@@ -21,6 +21,94 @@
   <body>
     <!-- HEADER START -->
     <header class="header">
+      <!-- MOBILE-MENU START -->
+      <div class="mobile-menu__overlay" data-menu>
+        <div class="mobile-menu">
+          <button
+            class="mobile-menu__button-close"
+            type="button"
+            data-menu-close
+          >
+            <svg class="mobile-menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu_close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a
+                class="mobile-menu__link-nav mobile-menu__link-nav--active"
+                href="./index.html"
+                >studio</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="./portfolio.html"
+                >portfolio</a
+              >
+            </li>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="#">contact</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a class="mobile-menu__link-contact-tel" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </li>
+            <li class="mobile-menu__list-contact-mailto">
+              <a
+                class="mobile-menu__link-contact-mailto"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://instagram.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="instagram"
+                >instagram</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://twitter.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="twitter"
+                >twitter</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://facebook.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="facebook"
+                >facebook</a
+              >
+            </li>
+            <li class="mobile-menu__item-social">
+              <a
+                class="mobile-menu__link-social"
+                href="https://linkedin.com/"
+                target="blank"
+                rel="nofollow noopener noreferrer"
+                aria-label="linkedin"
+                >linkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- MOBILE-MENU END -->
       <div class="container">
         <div class="header__body">
           <div class="header__index">
@@ -42,6 +130,13 @@
               </li>
             </ul>
           </div>
+
+          <button class="mobile-menu-button" type="button" data-menu-open>
+            <svg class="mobile-menu-button__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
+              >
+            </svg>
+          </button>
 
           <ul class="header__list">
             <li class="header__item">
@@ -146,7 +241,8 @@
           <ul class="main-images services__list">
             <li class="services__item">
               <img
-                src="images/box_1.jpg"
+                src="./images/services/box_1.jpg"
+                srcset="./images/services/box_1@2x.jpg 2x"
                 alt="Programmer works at his desk"
                 width="370"
                 height="294"
@@ -157,7 +253,8 @@
 
             <li class="services__item">
               <img
-                src="images/box_2.jpg"
+                src="./images/services/box_2.jpg"
+                srcset="./images/services/box_2@2x.jpg 2x"
                 alt="UI designer creates smartphone app project"
                 width="370"
                 height="294"
@@ -168,7 +265,8 @@
 
             <li class="services__item">
               <img
-                src="images/box_3.jpg"
+                src="./images/services/box_3.jpg"
+                srcset="./images/services/box_3@2x.jpg 2x"
                 alt="Graphic designer designs on his graphic tablet"
                 width="370"
                 height="294"
@@ -189,7 +287,8 @@
             <li class="team__item">
               <div class="team-content">
                 <img
-                  src="images/team_card_1.jpg"
+                  src="./images/team/team_card_1.jpg"
+                  srcset="./images/team/team_card_1@2x.jpg 2x"
                   alt="Photo John Doe - Product Designer"
                   width="270"
                   height="260"
@@ -249,7 +348,8 @@
             <li class="team__item">
               <div class="team-content">
                 <img
-                  src="images/team_card_2.jpg"
+                  src="./images/team/team_card_2.jpg"
+                  srcset="./images/team/team_card_2@2x.jpg 2x"
                   alt="Photo John Doe - Frontend Developer"
                   width="270"
                   height="260"
@@ -308,7 +408,8 @@
             <li class="team__item">
               <div class="team-content">
                 <img
-                  src="images/team_card_3.jpg"
+                  src="./images/team/team_card_3.jpg"
+                  srcset="./images/team/team_card_3@2x.jpg 2x"
                   alt="Photo John Doe - Marketing"
                   width="270"
                   height="260"
@@ -367,7 +468,8 @@
             <li class="team__item">
               <div class="team-content">
                 <img
-                  src="images/team_card_4.jpg"
+                  src="./images/team/team_card_4.jpg"
+                  srcset="./images/team/team_card_4@2x.jpg 2x"
                   alt="Photo John Doe - UI Designer"
                   width="270"
                   height="260"
@@ -685,5 +787,6 @@
     </div>
     <script src="./js/modal.js"></script>
     <!-- MODAL END -->
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
