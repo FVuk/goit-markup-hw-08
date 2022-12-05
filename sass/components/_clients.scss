@@ -1,21 +1,31 @@
 .clients {
-  padding-top: 94px;
+  padding: 60px;
 
   &__list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
     flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 0;
-    padding-bottom: 94px;
-    gap: 30px;
+    grid-gap: 30px;
   }
 
   &__list .clients__icon {
     fill: #afb1b8;
-    border: 1px solid #afb1b8;
+    transition: fill $transform;
+
+    & {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid $mainLinkColor;
     border-radius: 4px;
-    transition: fill $transform, border-color $transform, transform $transform;
+    transition: border-color $transform;
 
     &:hover,
     &:focus {
@@ -26,6 +36,42 @@
   &__link:hover .clients__icon,
   &__link:focus .clients__icon {
     fill: $mainActiveColor;
-    transform: scale(1.2);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+
+    &__list {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__list .clients__icon {
+      transition: fill 1s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link {
+      transition: border-color 1s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 1s cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        border-color: $mainActiveColor;
+        transform: scale(1.2);
+      }
+    }
   }
 }

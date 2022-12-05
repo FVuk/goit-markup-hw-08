@@ -1,53 +1,79 @@
 .header {
   border-bottom: 1px solid #ececec;
 
-&__body {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $secondaryWhiteColor;
-}
-
-&__index {
-  display: flex;
-  align-items: center;
-}
-
-&__list {
-  color: $mainLinkColor;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  list-style-type: none;
-  font-weight: 500px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-&__link {
-  display: flex;
-  align-items: center;
-  padding: 25px;
-  text-decoration: none;
-  color: inherit;
-  transition: color $transform;
-
-  &:hover,
-  &:focus {
-    color: $mainActiveColor;
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $secondaryWhiteColor;
+    padding: 8px 0;
   }
-  & .header__icon {
-    fill: $mainLinkColor;
-    transition: fill $transform;
-    margin-right: 10px;
+
+  &__index {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    color: $mainLinkColor;
+    display: none;
+    list-style-type: none;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: color $transform;
+
+    &:hover,
+    &:focus {
+      color: $mainActiveColor;
+    }
+    & .header__icon {
+      fill: $mainLinkColor;
+      transition: fill $transform;
+      margin-right: 10px;
+    }
+  }
+
+  &__item:hover .header__icon,
+  &__item:focus .header__icon {
+    fill: $mainActiveColor;
   }
 }
 
-&__item:hover .header__icon,
-&__item:focus .header__icon {
-  fill: $mainActiveColor;
-}
+@media screen and (min-width: 768px) {
+  .header {
+    &__body {
+      padding: 21px 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
 }
 
-
+@media screen and (min-width: 1200px) {
+  .header {
+    &__body {
+      padding-top: 13px;
+      padding-bottom: 0;
+    }
+    &__list {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &__link {
+      padding: 25px;
+    }
+  }
+}

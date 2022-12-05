@@ -1,16 +1,17 @@
-.footer__sidebar {
-  padding-left: 70px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.footer-sidebar {
+  width: 100%;
 
   &__group {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 12px;
   }
 
   &__input {
     box-sizing: border-box;
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -22,7 +23,6 @@
     line-height: 1.25;
     font-size: 16px;
     letter-spacing: 0.03em;
-    display: flex;
     transition: border-color $transform;
 
     &::placeholder {
@@ -39,11 +39,16 @@
     }
   }
 
+  &__label {
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
   &__button {
     padding: 10px 28px;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
     background: $mainActiveColor;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -62,5 +67,32 @@
 
   &__icon {
     fill: $secondaryWhiteColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-sidebar {
+    &__label {
+      display: block;
+      max-width: 450px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-sidebar {
+    margin-left: 78px;
+    width: auto;
+
+    &__label {
+      padding-bottom: 0;
+    }
+    &__group {
+      flex-direction: row;
+      gap: 12px;
+    }
+    &__input {
+      width: 358px;
+    }
   }
 }

@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -30,7 +31,7 @@
             data-menu-close
           >
             <svg class="mobile-menu__icon-close" width="40" height="40">
-              <use href="./images/icons.svg#icon-mobile-menu_close"></use>
+              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
             </svg>
           </button>
           <ul class="mobile-menu__list-nav">
@@ -130,14 +131,11 @@
               </li>
             </ul>
           </div>
-
-          <button class="mobile-menu-button" type="button" data-menu-open>
-            <svg class="mobile-menu-button__icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
-              >
+          <button class="mobile-menu__button" type="button" data-menu-open>
+            <svg class="mobile-menu__button-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-
           <ul class="header__list">
             <li class="header__item">
               <a href="mailto:info@devstudio.com" class="header__link"
@@ -663,7 +661,7 @@
             </ul>
           </div>
 
-          <form class="footer__sidebar">
+          <form class="footer-sidebar">
             <p class="footer-tabs__title">subscribe to the newsletter</p>
             <div class="footer-sidebar__group">
               <label for="user_newsletter" class="footer-sidebar__label">
@@ -787,6 +785,7 @@
     </div>
     <script src="./js/modal.js"></script>
     <!-- MODAL END -->
-    <script src="./mobile-menu.js"></script>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

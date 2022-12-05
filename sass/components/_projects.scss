@@ -1,11 +1,13 @@
 .projects {
   &__portfolio {
-    flex-wrap: wrap;
-    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 30px;
+    padding-bottom: 60px;
   }
 
   &__item {
-    flex-basis: calc((100% - 3 * 30px) / 3);
     background: $secondaryWhiteColor;
     border-radius: 1px solid #eeeeee;
     transition: box-shadow $transform;
@@ -41,8 +43,9 @@
   }
 
   &__image {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    display: block;
+    object-fit: cover;
   }
 
   &__box {
@@ -70,5 +73,31 @@
     background-color: rgba(33, 150, 243, 0.9);
     transition: transform $transform;
     transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    &__portfolio {
+      flex-direction: row;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects {
+    &__portfolio {
+      flex-wrap: wrap;
+      padding-bottom: 94px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px * 3) / 3);
+    }
   }
 }

@@ -3,19 +3,17 @@
 
   &__body {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 60px 0;
-  }
-
-  &__group {
+    align-items: center;
     flex-direction: column;
-    margin: 0;
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   &__address {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-style: normal;
     color: $secondaryWhiteColor;
   }
@@ -31,6 +29,7 @@
 
   &__link {
     display: block;
+    text-align: center;
     margin-bottom: 9px;
     color: inherit;
     text-decoration: none;
@@ -45,7 +44,40 @@
       font-size: 14px;
       line-height: 1.71;
       letter-spacing: 0.03em;
-      margin-bottom: 9px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    &__body {
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+    &__group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    &__group {
+      align-items: flex-start;
+      padding-bottom: 0;
+    }
+    &__address {
+      display: block;
+    }
+    &__contacts {
+      margin-top: 9px;
+    }
+    &__link {
+      text-align: left;
     }
   }
 }

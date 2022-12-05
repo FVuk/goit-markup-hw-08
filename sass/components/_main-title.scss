@@ -1,8 +1,17 @@
 .main-title {
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 700;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 36px;
+    line-height: 1.16;
+    padding-bottom: 50px;
+  }
 }

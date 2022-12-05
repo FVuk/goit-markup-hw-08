@@ -1,8 +1,8 @@
 .logo {
   font-family: $secondaryFont;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: color $transform;
@@ -14,16 +14,31 @@
 
   &--dark {
     color: inherit;
-    margin-right: 93px;
   }
 
   &--light {
     color: $secondaryWhiteColor;
-    margin-bottom: 2px;
-    display: inline-block;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   &__title {
     color: $mainActiveColor;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    &--dark {
+      margin-right: 93px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }

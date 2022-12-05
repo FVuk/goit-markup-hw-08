@@ -4,70 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css"
-    />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- HEADER START -->
     <header class="header">
       <!-- MOBILE-MENU START -->
-      <div class="mobile-menu_overlay" data-menu>
+      <div class="mobile-menu__overlay" data-menu>
         <div class="mobile-menu">
           <button
-            class="mobile-menu_button-close"
+            class="mobile-menu__button-close"
             type="button"
             data-menu-close
           >
-            <svg class="mobile-menu_icon-close" width="40" height="40">
-              <use href="./images/icons.svg#icon-mobile-menu_close"></use>
+            <svg class="mobile-menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
             </svg>
           </button>
-          <ul class="mobile-menu_list-nav">
-            <li class="mobile-menu_item-nav">
-              <a
-                class="mobile-menu_link-nav mobile-menu_link-na--active"
-                href="./index.html"
-                >studio</a
-              >
+          <ul class="mobile-menu__list-nav">
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="./index.html">studio</a>
             </li>
-            <li class="mobile-menu_item-nav">
-              <a class="mobile-menu_link-nav" href="./portfolio.html"
+            <li class="mobile-menu__item-nav">
+              <a
+                class="mobile-menu__link-nav mobile-menu__link-nav--active"
+                href="./portfolio.html"
                 >portfolio</a
               >
             </li>
-            <li class="mobile-menu_item-nav">
-              <a class="mobile-menu_link-nav" href="#">contact</a>
+            <li class="mobile-menu__item-nav">
+              <a class="mobile-menu__link-nav" href="#">contact</a>
             </li>
           </ul>
-          <ul class="mobile-menu_list-contact">
-            <li class="mobile-menu_list-contact-tel">
-              <a class="mobile-menu_link-contact-tel" href="tel:+48111111111"
+          <ul class="mobile-menu__list-contact">
+            <li class="mobile-menu__list-contact-tel">
+              <a class="mobile-menu__link-contact-tel" href="tel:+48111111111"
                 >+48 111 111 111</a
               >
             </li>
-            <li class="mobile-menu_list-contact-mailto">
+            <li class="mobile-menu__list-contact-mailto">
               <a
-                class="mobile-menu_link-contact-mailto"
+                class="mobile-menu__link-contact-mailto"
                 href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
           </ul>
-          <ul class="mobile-menu_list-social">
-            <li class="mobile-menu_item-social">
+          <ul class="mobile-menu__list-social">
+            <li class="mobile-menu__item-social">
               <a
-                class="mobile-menu_link-social"
+                class="mobile-menu__link-social"
                 href="https://instagram.com/"
                 target="blank"
                 rel="nofollow noopener noreferrer"
@@ -75,9 +74,9 @@
                 >instagram</a
               >
             </li>
-            <li class="mobile-menu_item-social">
+            <li class="mobile-menu__item-social">
               <a
-                class="mobile-menu_link-social"
+                class="mobile-menu__link-social"
                 href="https://twitter.com/"
                 target="blank"
                 rel="nofollow noopener noreferrer"
@@ -85,9 +84,9 @@
                 >twitter</a
               >
             </li>
-            <li class="mobile-menu_item-social">
+            <li class="mobile-menu__item-social">
               <a
-                class="mobile-menu_link-social"
+                class="mobile-menu__link-social"
                 href="https://facebook.com/"
                 target="blank"
                 rel="nofollow noopener noreferrer"
@@ -95,9 +94,9 @@
                 >facebook</a
               >
             </li>
-            <li class="mobile-menu_item-social">
+            <li class="mobile-menu__item-social">
               <a
-                class="mobile-menu_link-social"
+                class="mobile-menu__link-social"
                 href="https://linkedin.com/"
                 target="blank"
                 rel="nofollow noopener noreferrer"
@@ -130,14 +129,11 @@
               </li>
             </ul>
           </div>
-
-          <button class="mobile-menu-button" type="button" data-menu-open>
-            <svg class="mobile-menu-button_icon" width="40" height="40">
-              <use href="./images/icons.svg#icon-mobile-menu-close"></use>
-              >
+          <button class="mobile-menu__button" type="button" data-menu-open>
+            <svg class="mobile-menu__button-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-menu"></use>
             </svg>
           </button>
-
           <ul class="header__list">
             <li class="header__item">
               <a href="mailto:info@devstudio.com" class="header__link"
@@ -496,5 +492,7 @@
       </div>
     </footer>
     <!-- FOOTER END -->
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

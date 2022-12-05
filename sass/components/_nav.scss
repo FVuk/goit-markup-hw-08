@@ -1,4 +1,10 @@
 .nav {
+display: none;
+}
+
+@media screen and (min-width: 768px) {
+  
+.nav {
   display: flex;
   gap: 46px;
   justify-content: flex-start;
@@ -8,6 +14,7 @@
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  align-items: center;
 
   &__link {
     position: relative;
@@ -37,5 +44,16 @@
 
   &__link--active {
     color: $mainActiveColor;
+  }
+}
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    &__link {
+      &--active::after {
+        transform: translateY(26px);
+      }
+    }
   }
 }

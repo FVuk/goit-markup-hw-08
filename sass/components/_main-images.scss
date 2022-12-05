@@ -1,6 +1,21 @@
 .main-images {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
   list-style-type: none;
   gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-images {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-images {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
 }

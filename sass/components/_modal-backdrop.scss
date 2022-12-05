@@ -10,7 +10,6 @@
   background-color: rgba(0, 0, 0, 0.2);
   transform: scale(1);
   opacity: 1;
-  visibility: visible;
-  transition: transform $transform, opacity $transform,
-    visibility $transform;
+  padding: 0 15px;
+  transition: transform $transform, opacity $transform;
 }
