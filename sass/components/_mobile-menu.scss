@@ -48,7 +48,7 @@
 
 .mobile-menu__list-nav {
   list-style-type: none;
-  margin-bottom: 302px;
+  margin-bottom: 305px;
 }
 
 .mobile-menu__button-close {
@@ -86,6 +86,8 @@
 
 .mobile-menu__list-contact {
   list-style-type: none;
+  position: absolute;
+  bottom: 64px;
 }
 
 .mobile-menu__link-contact-tel {
@@ -118,6 +120,8 @@
   flex-wrap: wrap;
   gap: 10px;
   list-style-type: none;
+  position: absolute;
+  bottom: 48px;
 }
 
 .mobile-menu__link-social {
