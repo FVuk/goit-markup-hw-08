@@ -44,7 +44,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_mobile.jpg");
+      url(/images/header_bgs/header_bg_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -61,7 +61,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_mobile@2x.jpg");
+      url(/images/header_bgs/header_bg_mobile@2x.jpg);
   }
 }
 
@@ -72,7 +72,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_tablet.jpg");
+      url(/images/header_bgs/header_bg_tablet.jpg);
   }
 }
 
@@ -85,7 +85,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_tablet@2x.jpg");
+      url(/images/header_bgs/header_bg_tablet@2x.jpg);
   }
 }
 
@@ -96,7 +96,7 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_desktop.jpg");
+      url(/images/header_bgs/header_bg_desktop.jpg);
 
     &__title {
       font-size: 44px;
@@ -114,6 +114,6 @@
         rgba(47, 48, 58, 0.4) 0%,
         rgba(47, 48, 58, 0.4) 100%
       ),
-      url("../images/header_bgs/header_bg_desktop@2x.jpg");
+      url(/images/header_bgs/header_bg_desktop@2x.jpg);
   }
 }
